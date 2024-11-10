@@ -8,7 +8,6 @@ const ServerActionsPage = () => {
   const createTaskWithTaskId = createTask.bind(null, taskId);
   const initialState = { error: ''}
   const [state, formAction] = useFormState(createTaskWithTaskId, initialState);
-  console.log(taskId);
   const SubmitButton = () => {
     const { pending } = useFormStatus();
     return (
